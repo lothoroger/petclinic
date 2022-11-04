@@ -10,7 +10,7 @@ pipeline {
 			//Run maven wrapper
 			//bat  "mvn compile"
 			//sh "chmod +x -R ${env.WORKSPACE}"	
-			sh "sudo ./mvnw compile"
+			sh "./mvnw compile"
 			echo 'Building the Project with Maven compiler'			
 			       }
 		               }

@@ -5,7 +5,7 @@ pipeline {
 		stage('Build') {
 			steps {
 			//Get code from GitHub repository
-			git 'https://github.com/lothoroger/petclinic.git
+			git 'https://github.com/lothoroger/petclinic.git'
 			
 			//Run maven wrapper
 			bat  "mvn compile"

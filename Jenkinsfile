@@ -8,7 +8,7 @@ pipeline {
 			git 'https://github.com/lothoroger/petclinic.git'
 			
 			//Run maven wrapper
-			//bat  "mvnw compile"
+			//bat  "mvn compile"
 			sh "./mvnw compile"
 			echo 'Building the Project with Maven compiler'			
 			       }

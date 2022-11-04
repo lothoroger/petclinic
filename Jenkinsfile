@@ -14,6 +14,13 @@ pipeline {
 			       }
 		               }
 		
+		stage ('Git Checkout') {
+  			steps {
+  			git branch: 'main', url: 'https://github.com/lothoroger/petclinic.git'
+			}
+                        }
+		
+		
 		stage('Test') {
 			steps {
 			bat 'mvn test'

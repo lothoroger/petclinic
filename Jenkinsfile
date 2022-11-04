@@ -9,7 +9,7 @@ pipeline {
 			
 			//Run maven wrapper
 			//bat  "mvn compile"
-			sh './mvnw compile'
+			sh './mvn compile'
 			echo 'Building the Project with Maven compiler'			
 			       }
 		               }
@@ -17,7 +17,7 @@ pipeline {
 		stage('Test') {
 			steps {
 			//bat 'mvn test'
-			sh './mvnw test'
+			sh './mvn test'
 				echo 'Testing the PetClinic project with Maven test'
 			  }
 			       }
@@ -25,7 +25,7 @@ pipeline {
 		stage('Deploy') {
 			steps {
 			//bat 'mvn package'
-			sh './mvnw package'	
+			sh './mvn package'	
 			echo 'Deploy the project with Maven package'
 				  }			
 						}

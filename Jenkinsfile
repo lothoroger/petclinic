@@ -10,7 +10,7 @@ pipeline {
 			//Run maven wrapper
 			//bat  "mvn compile"
 			sh "chmod +x -R ${env.WORKSPACE}"	
-			sh "./mvnw compile"
+			sh "sudo ./mvnw compile"
 			echo 'Building the Project with Maven compiler'			
 			       }
 		               }
@@ -19,7 +19,7 @@ pipeline {
 			steps {
 			//bat 'mvn test'
 			sh "chmod +x -R ${env.WORKSPACE}"	
-			sh "./mvnw test"
+			sh "sudo ./mvnw test"
 				echo 'Testing the PetClinic project with Maven test'
 			  }
 			       }
@@ -28,7 +28,7 @@ pipeline {
 			steps {
 			//bat 'mvn package'
 			sh "chmod +x -R ${env.WORKSPACE}"	
-			sh "./mvnw package"	
+			sh "sudo ./mvnw package"	
 			echo 'Deploy the project with Maven package'
 				  }			
 						}

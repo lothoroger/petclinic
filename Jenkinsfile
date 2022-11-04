@@ -9,7 +9,7 @@ pipeline {
 			
 			//Run maven wrapper
 			//bat  "mvn compile"
-			sh "./mvnw compile"
+			sh "./mvn compile"
 			echo 'Building the Project with Maven compiler'			
 			       }
 		               }
